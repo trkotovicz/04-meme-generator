@@ -6,11 +6,9 @@ let imageContainer = document.getElementById("meme-image-container");
 let memeImage = document.getElementById("meme-image");
 
 // add input texto
-btnInput.addEventListener("click", function() {
+inputText.addEventListener("keyup", function() {
     if (inputText.value.length > 0) {
         memeText.innerText = inputText.value;
-
-        inputText.value = "";
     };
 });
 
