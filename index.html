@@ -18,16 +18,26 @@
             <button id="btn-input">Inserir Texto</button>
         </section>  
         
-        <input type="file" id="meme-insert">
-        <button id="btn-image">Enviar Imagem</button>
+        <input type="file" id="meme-insert" accept="image/*">
+       
         <section id="meme-image-container">
-            <div id="meme-image"></div>
-            <div id="meme-text"></div>
+            <img id="meme-image" src="" alt="">
+            <div id="text-container">
+                <div id="meme-text"></div>
+            </div>
         </section>
+
         <section class="customize-btn">
             <button id="fire">Fire</button>
             <button id="water">Water</button>
             <button id="earth">Earth</button>
+        </section>
+
+        <section class="famous-meme">
+            <img id="meme-1" class="meme" src="imgs/meme1.png">
+            <img id="meme-2" class="meme" src="imgs/meme2.png">
+            <img id="meme-3" class="meme" src="imgs/meme3.png">
+            <img id="meme-4" class="meme" src="imgs/meme4.png">
         </section>
 
     </main>
