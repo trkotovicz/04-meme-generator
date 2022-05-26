@@ -12,16 +12,11 @@ inputText.addEventListener('keyup', () => {
 });
 
 // add input img
-/* Referência tirada do MDN
-https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications#example.3a_using_object_urls_to_display_images
-*/
-
 function addImage(event) {
   memeImage.src = URL.createObjectURL(event.target.files[0]);
 }
 
 inputImage.addEventListener('change', addImage);
-// usar o evento "change" foi sugerido em alguma mentoria (não lembro qual)
 
 // add moldura ao clicar nos botões
 const fireBtn = document.getElementById('fire');
@@ -37,6 +32,11 @@ waterBtn.addEventListener('click', () => {
 const earthBtn = document.getElementById('earth');
 earthBtn.addEventListener('click', () => {
   imageContainer.style.border = '6px groove green';
+});
+
+const blackBtn = document.getElementById('black');
+blackBtn.addEventListener('click', () => {
+  imageContainer.style.border = '6px groove black';
 });
 
 // função que busca a source da imagem clicada (event) e adiciona na source da imagem id="meme-image"
